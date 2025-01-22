@@ -28,7 +28,7 @@
       </form>
     <script src="converter.js"></script>
   <script>
-    navigator.serviceWorker.register('/sw.js').then(function() {
+    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(function() {
 
 
         console.log('サービスワーカーの登録成功');
